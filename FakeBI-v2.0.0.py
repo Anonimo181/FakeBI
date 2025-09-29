@@ -23,14 +23,8 @@ allow_names = {"debug"}
 
 
 def main_logic():
-    """
-    Contém a lógica principal do programa.
-    Toda a interação aqui deve ser APENAS via terminal.
-    """
     print("Olá, estou aqui.")
     while True:
-        # CORREÇÃO: Usar input() para interação via terminal.
-        # O .strip() remove espaços em branco extras.
         name = input("Qual o seu seu nome? ").strip()
 
         if not name:
@@ -52,7 +46,6 @@ def main_logic():
             time.sleep(1)
             print("Dados enviados para o FBI.")
             time.sleep(2)
-            # O 'track' da biblioteca rich é uma barra de progresso de terminal, o que é permitido.
             for i in track(
                 range(100), description="[green]Processando arquivo recebido...[/green]"
             ):
@@ -82,13 +75,11 @@ def main_logic():
 
 
 def start_program(root):
-    """Destrói a GUI do menu e inicia a lógica principal no terminal."""
     root.destroy()
     main_logic()
 
 
 def open_config_window(root):
-    """Função para abrir a janela de configuração (GUI permitida para o menu)."""
     root.withdraw()
     config_window = Toplevel(root)
     config_window.title("Configuração de Nomes")
