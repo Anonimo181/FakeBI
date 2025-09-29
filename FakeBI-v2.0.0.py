@@ -28,7 +28,6 @@ def main_logic():
         name = input("Qual o seu seu nome? ").strip()
 
         if not name:
-            # Lida com o caso de entrada vazia
             print("Nome não pode ser vazio. Tente novamente.")
             continue
 
@@ -67,7 +66,6 @@ def main_logic():
                 print(f"\n[!] Não foi possível criar o arquivo txt. Erro: {e}")
 
             time.sleep(1.18)
-            # CORREÇÃO: Substituído messagebox.showinfo (GUI) por print (Terminal)
             print(
                 "Suas informações foram enviadas o Federal Bureau of Investigation (FBI) para análise legal. | Your informations was send to FBI for legal analysis."
             )
@@ -159,7 +157,6 @@ def open_config_window(root):
 
 
 def main():
-    """Cria e exibe a GUI do menu inicial (única GUI permitida)."""
     root = tk.Tk()
     root.title("Tela Inicial")
     root.geometry("300x150")
