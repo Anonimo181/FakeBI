@@ -1,7 +1,7 @@
 # FakeBI
 A troll portuguese program. | Um programa troll em português.
 
-Este programa inofensivo foi feito apenas por diversão. Ele age em nome do FBI, orquestrando uma série de eventos que fazem qualquer leigo pensar que chamou a atenção do FBI.
+Este programa inofensivo foi feito apenas por diversão. Ele age em nome do FBI, orquestrando uma série de eventos que fazem qualquer leigo pensar que chamou a atenção da agência.
 
 ## Como usar a versão principal
 - baixe o arquivo zip na release desejada (recomendamos a mais recente)
